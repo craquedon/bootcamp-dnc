@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
         
+:root{    
+    --azul-dnc: #0C70F2;
+    --preto-dnc: #303030;
+    --cinza-hover: #C9C9C9;
+    
+    --fonte-padrao: 'Inter'
+}
+
     body {
         margin: 0px;
         padding: 0px;
+        background: linear-gradient(180deg, rgba(12, 112, 242, 0.50) 19.91%, rgba(12, 112, 242, 0.00) 24.84%), #303030;
+        background-repeat: no-repeat;
     }    
 
     #principal {
@@ -24,7 +34,7 @@
         }
 
         #principal div a {
-            font-family: 'inter';
+            font-family: var(--fonte-padrao);
             font-size: 18px;
             font-weight: 600;
             color: white;
@@ -47,3 +57,96 @@
             font-weight: 500;
             box-shadow: 3px 2px 4px 0px rgba(12, 112, 242, 0.25);
         }
+    /* Seção principal do site */
+
+    section{
+        display: flex;
+        flex-direction: column;
+        
+
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    header{
+        color: white;
+        font-family: 'inter';
+        text-align: center;
+    }
+
+    header h1{
+        font-size: 50px;
+        font-weight: 800;
+        margin-bottom: 40px;
+       
+    }
+
+    header h2 {
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 90px;
+    }
+    header .Invert {
+        background-color: black;
+        font-weight: bold;
+        padding: 5px;
+    }
+
+    form {
+        color: white;
+        font-family: 'inter';
+        font-size: 20px;
+        font-weight: 400;
+        width: 560px;
+    }
+    
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    form input{
+        border-radius: 10px;
+        height: 30px;
+        border: 0px;
+        font-size: 20px;
+        padding: 5px;
+        background-color: rgba(255, 255, 255, 0.90);
+        
+    }
+
+    form label{
+        margin: 0px 0px 0px 0px;
+    }
+    form input ::placeholder{
+        color: rgba(57, 57, 57, 0.50);;
+    }
+    .checkbox-itens label{
+        font-size: 22px;
+    }
+
+    .checkbox-itens{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    input[type="checkbox"]{
+        transform: scale(1.5);
+    }
+
+    input[type="submit"]{
+        background-color: #0C70F2E5;
+        color: #FFF;
+        font-family: 'inter';
+        width: 100%;
+        height: 45px;
+        margin-top: 30px;
+        border-radius: 10px;
+        font-size: 28px;
+        box-shadow: 0px 6px 4px 0px rgba(12, 112, 242, 0.25);
+        cursor: pointer;
+    }
